@@ -1,14 +1,15 @@
-/* Make page stretch to full height */
-html, body {
-  height: 100%;
-  margin: 0;
-  font-family: Arial, sans-serif;
+/* Global body styling */
+body {
   background-color: pink;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-/* Header */
+/* Header styling */
 header {
   background-color: lightblue;
   color: black;
@@ -18,24 +19,20 @@ header {
   padding: 20px;
 }
 
-/* Navbar */
+/* Top nav bar styling */
 nav {
-  background-color: #ffe4e1;
-  height: 40px;
-  line-height: 40px;
+  background-color: pink;
   text-align: center;
-  font-weight: bold;
-}
-nav a {
-  text-decoration: none;
-  color: black;
-  margin: 0 10px;
-}
-nav a:hover {
-  color: red;
+  padding: 10px;
 }
 
-/* Main layout container */
+nav a {
+  margin: 0 10px;
+  color: blue;
+  text-decoration: none;
+}
+
+/* Container layout for body content */
 .container {
   display: flex;
   flex: 1;
@@ -45,48 +42,52 @@ nav a:hover {
   gap: 10px;
 }
 
-/* Left sidebar */
+/* For 2-column layout: left and main */
+.container.no-right .left {
+  width: 20%;
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+.container.no-right main {
+  width: 80%;
+  background-color: white;
+  padding: 10px;
+}
+
+/* For 3-column layout: left, main, right */
 .left {
   width: 20%;
   background-color: #f0f0f0;
   padding: 10px;
 }
 
-/* Main content */
 main {
+  width: 60%;
   background-color: white;
   padding: 10px;
 }
 
-/* Handle layout with and without right sidebar */
-.container.no-right main {
-  width: 80%;
-}
-
-.container:not(.no-right) main {
-  width: 60%;
-}
-
-/* Optional .right section if used on other pages */
 .right {
   width: 20%;
-  background-color: #f5f5f5;
+  background-color: #f0f0f0;
   padding: 10px;
 }
 
-/* Footer at bottom */
+/* Footer styling */
 footer {
   background-color: lightblue;
   color: black;
   text-align: center;
   padding: 15px;
+  margin-top: auto;
 }
 
-/* Link styling */
+/* Remove underline from all links */
 a:link,
 a:visited,
 a:hover,
 a:active {
-  color: blue;
   text-decoration: none;
+  color: blue;
 }
