@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Daiki Komido – Homepage</title>
-  <link rel="stylesheet" href="myStyle.css">
+  <link rel="stylesheet" href="myStyle.css" />
 </head>
 <body>
 
   <!-- HEADER -->
   <header>Daiki Komido – Exercise 5</header>
 
-  <!-- NAVBAR -->
+  <!-- NAVIGATION -->
   <nav>
     <a href="index.html">Home</a> |
     <a href="portfolio.html">Portfolio</a> |
     <a href="trivia.html">Trivia</a>
   </nav>
 
-  <!-- LAYOUT -->
+  <!-- FLEX LAYOUT -->
   <div class="container">
-    <!-- Left Sidebar -->
+    <!-- LEFT SIDEBAR -->
     <aside class="left">
       <h3>Useful Links</h3>
       <ul>
@@ -29,26 +29,22 @@
       </ul>
     </aside>
 
-    <!-- Main Content -->
+    <!-- MAIN CONTENT -->
     <main>
       <h2>About Me</h2>
       <p>Hello! I am half Japanese and half Colombian, currently living in Japan and studying in Ritsumeikan University, part of the ISSE course. Before coming to Japan, I used to live in the UK where I spent most of my childhood as well as Panama, Miami, and Singapore. This diverse upbringing has shaped my worldview and appreciation for technology and culture. In this website, you’ll find a glimpse into my background, projects, and an interactive trivia section built with JavaScript.</p>
-      <img src="https://via.placeholder.com/400x200" alt="Daiki's journey photo">
+      <img src="https://via.placeholder.com/400x200" alt="Daiki's journey photo" />
     </main>
 
-    <!-- Right Sidebar -->
+    <!-- RIGHT SIDEBAR -->
     <aside class="right">
       <h3>Contact Me</h3>
       <form method="post" action="mailto:is0669xe@ed.ritsumei.ac.jp">
-        Name:<br><input type="text" name="name"><br>
-        Email:<br><input type="email" name="email"><br><br>
-
-        Preferred contact method:<br>
-        <input type="radio" name="method" value="email" checked> Email<br>
-        <input type="radio" name="method" value="phone"> Phone<br><br>
-
-        <input type="submit" value="SEND">
-        <input type="reset" value="CLEAR">
+        <input type="text" name="name" placeholder="Name" /><br />
+        <input type="email" name="email" placeholder="Email" /><br />
+        <textarea name="message" placeholder="Your message"></textarea><br />
+        <input type="submit" value="SEND" />
+        <input type="reset" value="CLEAR" />
       </form>
     </aside>
   </div>
