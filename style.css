@@ -16,13 +16,14 @@ header {
 
 /* Layout */
 .container {
-  display: flex;
+  width: 20%;
+  background-color: #f0f0f0;
   padding: 10px;
 }
 
-.left, .right {
-  width: 20%;
-  background-color: #f0f0f0;
+.container.no-right main {
+  width: 80%;
+  background-color: white;
   padding: 10px;
 }
 
