@@ -1,41 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>My Website - Home</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Daiki Komido – Homepage</title>
+  <link rel="stylesheet" href="myStyle.css">
 </head>
 <body>
-  <header>My Website</header>
+
+  <!-- HEADER -->
+  <header>Daiki Komido – Exercise 5</header>
+
+  <!-- NAVBAR -->
   <nav>
-    <a href="index.html">Home</a> |
-    <a href="portfolio.html">Portfolio</a> |
-    <a href="trivia.html">Trivia</a>
+    <a href="index.html">HOME</a> |
+    <a href="portfolio.html">PORTFOLIO</a> |
+    <a href="trivia.html">TRIVIA</a>
   </nav>
+
+  <!-- LAYOUT -->
   <div class="container">
+    <!-- Left Sidebar -->
     <aside class="left">
       <h3>Useful Links</h3>
       <ul>
-        <li><a href="https://developer.mozilla.org" target="_blank">MDN</a></li>
-        <li><a href="https://w3schools.com" target="_blank">W3Schools</a></li>
+        <li><a href="https://www.htmldog.com/guides/html/beginner/" target="_blank">HTML Dog</a></li>
+        <li><a href="https://www.w3schools.com/html/" target="_blank">W3Schools</a></li>
+        <li><a href="https://www.htmlhelp.com/" target="_blank">HTML Help</a></li>
       </ul>
     </aside>
+
+    <!-- Main Content -->
     <main>
       <h2>About Me</h2>
-      <p>Hello! I'm a university student passionate about coding, music, and video games. In my spare time, I enjoy exploring new technologies, building small projects, and writing about my experiences. One of my favorite things to do is play indie games and analyze how their mechanics work. This sparked my interest in game development and human-computer interaction. I also like to make digital art and occasionally share it on social media. This website is my small portfolio to showcase what I've been learning in my Information Systems class. Thanks for visiting!</p>
-      <img src="https://via.placeholder.com/400x200" alt="Hobby image" />
+      <p>Hello! I am half Japanese and half Colombian, currently living in Japan and studying in Ritsumeikan University, part of the ISSE course. Before coming to Japan, I used to live in the UK where I spent most of my childhood as well as Panama, Miami, and Singapore. This diverse upbringing has shaped my worldview and appreciation for technology and culture. In this website, you’ll find a glimpse into my background, projects, and an interactive trivia section built with JavaScript.</p>
+      <img src="https://via.placeholder.com/400x200" alt="Daiki's journey photo">
     </main>
+
+    <!-- Right Sidebar -->
     <aside class="right">
       <h3>Contact Me</h3>
-      <form>
-        <input type="text" placeholder="Name" /><br />
-        <input type="email" placeholder="Email" /><br />
-        <textarea placeholder="Your message"></textarea><br />
-        <button type="submit">Submit</button>
-        <button type="reset">Clear</button>
+      <form method="post" action="mailto:is0669xe@ed.ritsumei.ac.jp">
+        Name:<br><input type="text" name="name"><br>
+        Email:<br><input type="email" name="email"><br><br>
+
+        Preferred contact method:<br>
+        <input type="radio" name="method" value="email" checked> Email<br>
+        <input type="radio" name="method" value="phone"> Phone<br><br>
+
+        <input type="submit" value="SEND">
+        <input type="reset" value="CLEAR">
       </form>
     </aside>
   </div>
-  <footer>Created: July 2025 | <a href="https://instagram.com" target="_blank">Instagram</a></footer>
+
+  <!-- FOOTER -->
+  <footer>
+    Created: July 2025 |
+    <a href="https://instagram.com" target="_blank">Instagram</a>
+  </footer>
+
 </body>
 </html>
