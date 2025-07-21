@@ -39,3 +39,12 @@ footer {
   text-align: center;
   padding: 15px;
 }
+
+a:link,
+a:visited {
+  color: blue;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+}
