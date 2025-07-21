@@ -1,4 +1,3 @@
-/* Global body styling */
 body {
   background-color: pink;
   font-family: Arial, sans-serif;
@@ -9,7 +8,6 @@ body {
   flex-direction: column;
 }
 
-/* Header styling */
 header {
   background-color: lightblue;
   color: black;
@@ -19,7 +17,6 @@ header {
   padding: 20px;
 }
 
-/* Top nav bar styling */
 nav {
   background-color: pink;
   text-align: center;
@@ -32,7 +29,6 @@ nav a {
   text-decoration: none;
 }
 
-/* Container layout for body content */
 .container {
   display: flex;
   flex: 1;
@@ -42,20 +38,18 @@ nav a {
   gap: 10px;
 }
 
-/* For 2-column layout: left and main */
-.container.no-right .left {
+.container.two-col .left {
   width: 20%;
   background-color: #f0f0f0;
   padding: 10px;
 }
 
-.container.no-right main {
+.container.two-col main {
   width: 80%;
   background-color: white;
   padding: 10px;
 }
 
-/* For 3-column layout: left, main, right */
 .left {
   width: 20%;
   background-color: #f0f0f0;
@@ -74,7 +68,6 @@ main {
   padding: 10px;
 }
 
-/* Footer styling */
 footer {
   background-color: lightblue;
   color: black;
@@ -83,7 +76,6 @@ footer {
   margin-top: auto;
 }
 
-/* Remove underline from all links */
 a:link,
 a:visited,
 a:hover,
