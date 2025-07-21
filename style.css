@@ -1,7 +1,11 @@
-body {
-  background-color: pink;
-  font-family: Arial, sans-serif;
+/* Make page stretch to full height */
+html, body {
+  height: 100%;
   margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: pink;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Header */
@@ -14,26 +18,63 @@ header {
   padding: 20px;
 }
 
-/* Layout */
+/* Navbar */
+nav {
+  background-color: #ffe4e1;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  margin: 0 10px;
+}
+nav a:hover {
+  color: red;
+}
+
+/* Main layout container */
 .container {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  gap: 10px;
+}
+
+/* Left sidebar */
+.left {
   width: 20%;
   background-color: #f0f0f0;
   padding: 10px;
 }
 
+/* Main content */
+main {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Handle layout with and without right sidebar */
 .container.no-right main {
   width: 80%;
-  background-color: white;
-  padding: 10px;
 }
 
-main {
+.container:not(.no-right) main {
   width: 60%;
-  background-color: white;
+}
+
+/* Optional .right section if used on other pages */
+.right {
+  width: 20%;
+  background-color: #f5f5f5;
   padding: 10px;
 }
 
-/* Footer */
+/* Footer at bottom */
 footer {
   background-color: lightblue;
   color: black;
@@ -41,6 +82,7 @@ footer {
   padding: 15px;
 }
 
+/* Link styling */
 a:link,
 a:visited,
 a:hover,
@@ -48,4 +90,3 @@ a:active {
   color: blue;
   text-decoration: none;
 }
-
